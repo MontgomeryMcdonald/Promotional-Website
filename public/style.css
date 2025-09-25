@@ -1,0 +1,51 @@
+nav{
+    text-align: center;
+    height: 5vh;
+    background-color: #1d3822;
+    color: whitesmoke;
+}
+
+body{
+    margin: 0px;
+}
+
+h1{
+    margin: 0px;
+}
+
+main{
+    background-image: url('./images/prism5.svg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+article{
+    background-color: whitesmoke;
+    color: black;
+    width: 50vw;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-color: #1d3822;
+    height: 5vh;
+    color: white;
+    text-align: center;
+}
+
+html{
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+}
+button{
+    width: 100%;
+}

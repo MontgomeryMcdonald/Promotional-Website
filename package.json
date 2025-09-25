@@ -1,0 +1,27 @@
+{
+  "name": "promotional-website",
+  "version": "1.0.0",
+  "description": "Promotional Website for Prism Launcher to practice NodeJS",
+  "homepage": "https://github.com/MontgomeryMcdonald/Promotional-Website#readme",
+  "bugs": {
+    "url": "https://github.com/MontgomeryMcdonald/Promotional-Website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MontgomeryMcdonald/Promotional-Website.git"
+  },
+  "license": "MIT",
+  "author": "Montgomery Mcdonald",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
