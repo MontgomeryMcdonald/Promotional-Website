@@ -1,47 +1,20 @@
 [
   {
-    "id": "mfygb19d49PAHW",
-    "fullName": "Peter Johnson",
-    "createdAt": "2025-09-24T20:43:03.841Z",
-    "firstName": "Worm",
-    "lastName": "Worm",
-    "email": "john@gmail.com",
-    "isNewsletter": "true"
-  },
-  {
-    "id": "mfzxzxpy5FCZMG",
-    "fullName": "Bob Burger",
-    "createdAt": "2025-09-25T21:46:05.302Z",
+    "id": "mg7103bqEX2H6V",
+    "fullName": "Bob Jack",
+    "createdAt": "2025-09-30T20:44:34.646Z",
     "firstName": "Bob",
-    "lastName": "Burger",
-    "email": "halfbloodhero1027@gmail.com",
+    "lastName": "Jack",
+    "email": "124@gmail.com",
     "isNewsletter": "true"
   },
   {
-    "id": "mfzy0147YSD0BW",
-    "fullName": "21343 Burger",
-    "createdAt": "2025-09-25T21:46:09.703Z",
-    "firstName": "21343",
-    "lastName": "Burger",
-    "email": "halfbloodhero1027@gmail.com",
-    "isNewsletter": "true"
-  },
-  {
-    "id": "mfzy03q1U1Z1NS",
-    "fullName": "335221343 Burger",
-    "createdAt": "2025-09-25T21:46:13.081Z",
-    "firstName": "335221343",
-    "lastName": "Burger",
-    "email": "halfbloodhero1027@gmail.com",
-    "isNewsletter": "true"
-  },
-  {
-    "id": "mfzy3nzeUDHRI9",
-    "fullName": "335221343 Burger",
-    "createdAt": "2025-09-25T21:48:59.306Z",
-    "firstName": "335221343",
-    "lastName": "Burger",
-    "email": "halfbloodhero1027@gmail.com",
+    "id": "mg710735PALD99",
+    "fullName": "Jack Jack",
+    "createdAt": "2025-09-30T20:44:39.521Z",
+    "firstName": "Jack",
+    "lastName": "Jack",
+    "email": "124@gmail.com",
     "isNewsletter": "true"
   }
 ]

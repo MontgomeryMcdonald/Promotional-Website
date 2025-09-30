@@ -77,3 +77,7 @@ export async function addData(input){
     await fs.writeFile(file, JSON.stringify(data, null, 2), "utf-8")
     return newSubmission
 }
+
+export async function writeData(input){
+    await fs.writeFile(file, JSON.stringify(input), "utf-8")
+}

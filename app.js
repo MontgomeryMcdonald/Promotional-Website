@@ -1,7 +1,7 @@
 import express from 'express'
 import path from 'path'
 import {fileURLToPath} from 'url'
-import {ensureDataFile, listData, addData} from './utils/api.js'
+import {ensureDataFile, listData, addData, writeData} from './utils/api.js'
 
 
 let ID = ""
@@ -70,18 +70,39 @@ async function compileData(){
     let output = ""
     for(let item of data){
         output += `
+        <div>
         <hr>
         <h2>${item.fullName}</h2>
         <p>${item.createdAt}</p>
         <p>${item.id}</p>
         <p>${item.email}</p>
+        <button onclick="deleteData(this)" id="${item.id}">Delete</button>
+        </div>
         `
     }
     console.log(output)
     return output
 }
-
-
+app.delete("/admin/api/delete:id", async (req, res) => {
+    try {
+        const students = await listData()
+        console.log(students)
+        const idx = students.findIndex(s => s.id == req.params.id.slice(1))
+        console.log(req.params.id)
+        console.log(idx)
+        if(idx === -1){
+            return res.status(404).json({error: "Student not found"})
+        }
+        console.log(students)
+        students.splice(idx, 1)
+        console.log(students)
+        writeData(students)
+        res.status(200).json({"result" : "Properly Deleted!"})
+    } catch (err) {
+                console.error(err)
+        res.status(500).json({error: "Server failed to delete student"})
+    }
+})
 
 
 app.use(`/${ID}`, async (req, res) => {
@@ -98,6 +119,15 @@ app.use(`/${ID}`, async (req, res) => {
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <script>
+    function deleteData(self){
+    self.parentNode.remove()
+    const path = 'http://localhost:5000/admin/api/delete:' + self.id
+    fetch(path, {
+    method: 'DELETE'
+    })
+}
+    </script>
 </head>
 <body>
 
