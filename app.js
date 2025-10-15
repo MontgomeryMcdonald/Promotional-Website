@@ -70,6 +70,7 @@ async function compileData(){
     let output = ""
     for(let item of data){
         output += `
+        
         <div>
         <hr>
         <h2>${item.fullName}</h2>
@@ -103,6 +104,7 @@ app.delete("/admin/api/delete:id", async (req, res) => {
         res.status(500).json({error: "Server failed to delete student"})
     }
 })
+
 
 
 app.use(`/${ID}`, async (req, res) => {
